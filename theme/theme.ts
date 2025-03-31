@@ -116,12 +116,12 @@ const theme = createTheme({
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
-          fontSize: "12px",
           borderRadius: "8px",
           "& fieldset": {
             borderColor: "#E0E0E2"
           },
           "&.Mui-error": {
+            fontSize: "12px",
             "& svg": {
               fill: "#FF6666"
             }
