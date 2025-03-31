@@ -5,6 +5,7 @@ import axios from "axios";
 import {setupInterceptorsTo} from "@/config/axios";
 import "@/assets/styles/globals.css";
 import { IRANSansX } from "@/config/font";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 setupInterceptorsTo(axios);
 
@@ -22,7 +23,10 @@ export default function RootLayout({
     <html lang="fa-IR" dir="rtl" suppressHydrationWarning>
       <body className={IRANSansX.variable}>
         <ThemeProvider options={{ key: "css" }}>
-          <ThemeRegistry>{children}</ThemeRegistry>
+          <ThemeRegistry>
+            {children}
+            <SpeedInsights />
+          </ThemeRegistry>
         </ThemeProvider>
       </body>
     </html>
