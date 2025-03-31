@@ -116,6 +116,7 @@ const theme = createTheme({
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
+          fontSize: "12px",
           borderRadius: "8px",
           "& fieldset": {
             borderColor: "#E0E0E2"
