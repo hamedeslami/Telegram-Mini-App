@@ -1,4 +1,5 @@
-import { NextRequest, NextResponse } from "next/server"; import { collection, doc, getDoc, getDocs, query, setDoc, where } from "firebase/firestore";
+import { NextRequest, NextResponse } from "next/server";
+import { doc, getDoc, setDoc } from "firebase/firestore";
 import { hashPassword } from "@/utils/passwordHasher";
 import { db } from "@/config/firebase";
 import jwt from "jsonwebtoken";
@@ -61,11 +62,11 @@ export async function POST(req: NextRequest) {
             },
             { status: 200 }
         );
-    } catch (error: any) {
+    } catch (error) {
         return NextResponse.json(
             {
                 status: 500,
-                message: error.message,
+                message: error,
                 data: null,
             },
             { status: 500 }

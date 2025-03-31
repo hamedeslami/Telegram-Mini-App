@@ -62,6 +62,7 @@ export default function SignupForm() {
       Cookies.set("AUTH_USER_TOKEN", response.data.accessToken, { expires: 1 / 24, path: "/" });
       router.push("/");
     }).catch((error) => {
+      console.error(error);
       toast.error(SignupMessage.SIGNUP_ERROR);
     }).finally(() => setLoading(false));
   };

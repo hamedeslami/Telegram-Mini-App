@@ -55,6 +55,7 @@ export default function LoginForm() {
       Cookies.set("AUTH_USER_TOKEN", response.data.accessToken, { expires: 1 / 24, path: "/" });
       router.push("/");
     }).catch((error) => {
+      console.error(error);
       toast.error(LoginMessage.LOGIN_ERROR);
     }).finally(() => setLoading(false))
   };
