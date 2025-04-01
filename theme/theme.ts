@@ -113,6 +113,15 @@ const theme = createTheme({
         }
       }
     },
+    MuiBottomNavigation:{
+      styleOverrides: {
+        root: {
+          borderRadius: "16px",
+          marginBottom: "16px",
+          boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
+        }
+      }
+    },
     MuiOutlinedInput: {
       styleOverrides: {
         root: {

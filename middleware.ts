@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { cookies } from "next/headers";
 
-const protectedRoutes: string[] = ["/"];
+const protectedRoutes: string[] = ["/", '/posts', '/create', '/profile'];
 const publicRoutes: string[] = [
   "/auth/login",
   "/auth/signup",
@@ -20,7 +20,7 @@ export default async function middleware(req: NextRequest): Promise<NextResponse
     }
 
     if (isPublicRoute && token) {
-        return NextResponse.redirect(new URL("/", req.nextUrl));
+        return NextResponse.redirect(new URL("/posts", req.nextUrl));
     }
 
     return NextResponse.next();

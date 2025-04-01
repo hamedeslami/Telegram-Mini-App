@@ -1,8 +1,5 @@
-import { Typography } from "@mui/material";
+import HomePage from "@/components/Posts";
 
 export default function Home() {
-  return (
-    <Typography>تست</Typography>
-
-  );
+  return <HomePage/>;
 }
