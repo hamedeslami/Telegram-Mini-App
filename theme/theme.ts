@@ -117,7 +117,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: "16px",
-          marginBottom: "65px",
+          marginBottom: "env(safe-area-inset-bottom)",
           boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
         }
       }

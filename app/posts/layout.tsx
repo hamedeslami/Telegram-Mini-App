@@ -12,7 +12,7 @@ export default function PostsLayout({
 
   return (
     <Container maxWidth={"sm"} sx={{ backgroundColor: "#f1f1f1"}}>
-      <Stack height={"100vh"} flexDirection={"column"} justifyContent={"space-between"}>
+      <Stack height={"100vh"} flexDirection={"column"} justifyContent={"center"}>
       {children}
       </Stack>
     </Container>

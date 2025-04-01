@@ -11,7 +11,7 @@ export default function BottomNav() {
     const pathname = usePathname();
 
     return (
-        <Box>
+        <Box sx={{position: 'sticky', bottom: 0}}>
             <BottomNavigation
                 showLabels
                 value={pathname}

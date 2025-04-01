@@ -31,7 +31,7 @@ export default function Posts() {
 
     return (
         <>
-            <Box sx={{height: "95vh", overflowY: "scroll"}}>
+            <Box sx={{height: "85vh", overflowY: "scroll"}}>
                 {posts?.data?.map((post: PostType) => (
                     <Post key={post.id} data={post} />
                 ))}
