@@ -49,7 +49,7 @@ export default function Create() {
 
     return (
         <>
-            <Box sx={{ height: "85vh" }}>
+            <Box sx={{ height: "80vh" }}>
                 <Card sx={{padding: "16px"}}>
                     <CardContent sx={{padding: 0}}>
                         <Box component={"form"} onSubmit={handleSubmit(onSubmit)}>

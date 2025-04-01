@@ -36,7 +36,7 @@ export default function Profile() {
 
     return (
         <>
-            <Box sx={{ height: "85vh", overflowY: "scroll" }}>
+            <Box sx={{ height: "80vh", overflowY: "scroll" }}>
                 <Stack flexDirection={'column'} alignItems={'center'}>
                     <Avatar sx={{ width: 100, height: 100 }} >
                         <PersonIcon sx={{ width: 80, height: 80 }} />
